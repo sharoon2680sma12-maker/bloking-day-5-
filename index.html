@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharoon Abigail | Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">Sharoon<span>Abigail</span></h2>
+        <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Halo, Saya <span>Sharoon Abigail</span></h1>
+            <p>Web Developer | UI/UX Enthusiast | Creative Designer</p>
+            <a href="#contact" class="btn">Hubungi Saya</a>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya adalah seorang web developer yang memiliki minat dalam
+            pengembangan website modern, responsif, dan user-friendly.
+            Saya senang menciptakan desain yang bersih dan elegan.
+        </p>
+    </section>
+
+    <!-- Skill -->
+    <section id="skills" class="skills">
+        <h2>Skill</h2>
+        <div class="skill-list">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">UI/UX Design</div>
+        </div>
+    </section>
+
+    <!-- Project -->
+    <section id="projects" class="projects">
+        <h2>Project</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Website Toko Online</h3>
+                <p>Website e-commerce dengan desain modern dan responsif.</p>
+            </div>
+            <div class="project-card">
+                <h3>Landing Page Produk</h3>
+                <p>Landing page interaktif untuk promosi produk digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+        <h2>Kontak</h2>
+        <p>Email: sharoon@email.com</p>
+        <p>Instagram: @sharoonabigail</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Sharoon Abigail. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+🎨 2️⃣ style.css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #111827;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.logo span {
+    color: #3b82f6;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3b82f6;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+    color: white;
+    padding: 20px;
+}
+
+.hero span {
+    color: #111827;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #111827;
+}
+
+/* Section */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Projects */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+    background: #111827;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: white;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
